@@ -24,7 +24,7 @@ namespace PracticalWork.Algorithms
             return words;
         }
 
-        public void MakeWords(char[] initial, int pos)
+        private void MakeWords(char[] initial, int pos)
         {
             if (pos == initial.Length)
             {

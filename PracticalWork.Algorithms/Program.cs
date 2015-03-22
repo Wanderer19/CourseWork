@@ -55,6 +55,9 @@ namespace PracticalWork.Algorithms
 
             //    Console.WriteLine();
             //}
+
+            var stack = new Stack<int>();
+            var res = stack.Pop();
         }
     }
 }

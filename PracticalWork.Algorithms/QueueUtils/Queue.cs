@@ -1,17 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PracticalWork.Algorithms
+namespace PracticalWork.Algorithms.QueueUtils
 {
-    public class QueueItem<T>
-    {
-        public T Value { get; set; }
-        public QueueItem<T> Next { get; set; }
-    }
-
     public class Queue<T>
     {
         private QueueItem<T> head;
@@ -31,14 +21,27 @@ namespace PracticalWork.Algorithms
 
         public T Dequeue()
         {
-            if (head == null) 
-                throw new InvalidOperationException();
-            
+            if (head == null)
+                throw new InvalidOperationException("Queue is empty.");
+
             var result = head.Value;
             head = head.Next;
             if (head == null)
                 tail = null;
             return result;
+        }
+
+        public T Peek()
+        {
+            if (IsEmpty())
+                throw new InvalidOperationException("Queue is empty.");
+
+            return head.Value;
+        }
+
+        public bool IsEmpty()
+        {
+            return head == null;
         }
     }
 }

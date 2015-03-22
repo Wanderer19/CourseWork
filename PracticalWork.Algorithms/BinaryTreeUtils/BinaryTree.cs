@@ -1,17 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace PracticalWork.Algorithms
+namespace PracticalWork.Algorithms.BinaryTreeUtils
 {
-    public class BinaryTreeItem<T> where T : IComparable
-    {
-        public T Value;
-        public BinaryTreeItem<T> LeftChild, RightChild;
-    }
-
     public class BinaryTree<T> where T : IComparable
     {
         private BinaryTreeItem<T> root;
@@ -71,11 +62,11 @@ namespace PracticalWork.Algorithms
             {
 
                 yield return node.Value;
-                foreach (var el in InfixTraverse(node.LeftChild))
+                foreach (var el in PrefixTraverse(node.LeftChild))
                 {
                     yield return el;
                 }
-                foreach (var el in InfixTraverse(node.RightChild))
+                foreach (var el in PrefixTraverse(node.RightChild))
                 {
                     yield return el;
                 }
@@ -95,11 +86,11 @@ namespace PracticalWork.Algorithms
             }
             else
             {
-                foreach (var el in InfixTraverse(node.LeftChild))
+                foreach (var el in PostfixTraverse(node.LeftChild))
                 {
                     yield return el;
                 }
-                foreach (var el in InfixTraverse(node.RightChild))
+                foreach (var el in PostfixTraverse(node.RightChild))
                 {
                     yield return el;
                 }

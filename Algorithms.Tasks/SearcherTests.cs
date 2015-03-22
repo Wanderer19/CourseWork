@@ -1,6 +1,7 @@
 ﻿using System;
 using NUnit.Framework;
 using PracticalWork.Algorithms;
+using PracticalWork.Algorithms.SearcherUtils;
 
 namespace Algorithms.Tasks
 {

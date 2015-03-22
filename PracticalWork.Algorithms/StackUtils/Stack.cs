@@ -1,16 +1,7 @@
-﻿namespace PracticalWork.Algorithms
+﻿using System;
+
+namespace PracticalWork.Algorithms.StackUtils
 {
-    public class StackItem<T>
-    {
-        public T Value { get; set; }
-        public StackItem<T> Next { get; set; }
-
-        public StackItem<T> Clone()
-        {
-            return new StackItem<T>() { Value = Value, Next = Next };
-        }
-    }
-
     public class Stack<T>
     {
         private StackItem<T> head;
@@ -28,6 +19,9 @@
 
         public T Pop()
         {
+            if (IsEmpty())
+                throw new InvalidOperationException("Stack is empty.");
+           
             var result = head;
             head = result.Next;
             return result.Value;
@@ -35,7 +29,7 @@
 
         public Stack<T> Clone()
         {
-            var stack = new Stack<T> {head = IsEmpty() ? null : head.Clone()};
+            var stack = new Stack<T> { head = IsEmpty() ? null : head.Clone() };
             return stack;
         }
 
@@ -51,7 +45,10 @@
 
         public T Peek()
         {
-            return IsEmpty() ? default(T) : head.Value;
+            if (IsEmpty())
+                throw new InvalidOperationException();
+
+            return head.Value;
         }
     }
 }
