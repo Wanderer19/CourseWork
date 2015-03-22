@@ -1,0 +1,8 @@
+C:\Users\asus\Desktop\02-fractals\PracticalWork\PracticalWork.Algorithms\bin\Debug\PracticalWork.Algorithms.exe.config
+C:\Users\asus\Desktop\02-fractals\PracticalWork\PracticalWork.Algorithms\bin\Debug\PracticalWork.Algorithms.exe
+C:\Users\asus\Desktop\02-fractals\PracticalWork\PracticalWork.Algorithms\bin\Debug\PracticalWork.Algorithms.pdb
+C:\Users\asus\Desktop\02-fractals\PracticalWork\PracticalWork.Algorithms\obj\Debug\PracticalWork.Algorithms.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\02-fractals\PracticalWork\PracticalWork.Algorithms\obj\Debug\PracticalWork.Algorithms.exe
+C:\Users\asus\Desktop\02-fractals\PracticalWork\PracticalWork.Algorithms\obj\Debug\PracticalWork.Algorithms.pdb
+C:\Users\asus\Desktop\02-fractals\PracticalWork\PracticalWork.Algorithms\bin\Debug\MoreLinq.dll
+C:\Users\asus\Desktop\02-fractals\PracticalWork\PracticalWork.Algorithms\bin\Debug\MoreLinq.xml
