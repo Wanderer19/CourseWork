@@ -1,18 +1,34 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
-namespace PracticalWork.Algorithms
+namespace PracticalWork.Algorithms.LinkedListUtils
 {
-    public class LinkedListItem<T>
-    {
-        public T Value;
-        public LinkedListItem<T> Next;
-    }
-
     public class LinkedList<T> : IEnumerable<T>
     {
         private LinkedListItem<T> head;
         private LinkedListItem<T> tail;
+        private LinkedListItem<T> current;  
+
+        public T GetFirstItem()
+        {
+            if (!IsEmpty())
+            {
+                return head.Value;
+            }
+            throw new InvalidOperationException();
+
+        }
+
+        public T GetLastItem()
+        {
+            if (!IsEmpty())
+            {
+                return tail.Value;
+            }
+            throw new InvalidOperationException();
+
+        }
 
         public LinkedList()
         {
@@ -29,12 +45,20 @@ namespace PracticalWork.Algorithms
         {
             if (IsEmpty())
             {
-                head = new LinkedListItem<T>() {Value = value, Next = null};
-                tail = head;
+                
+                tail = new LinkedListItem<T>() { Value = value, Next = null };
+                head = new LinkedListItem<T>() { Value = value, Next = null };
             }
             else
             {
-                tail.Next = new LinkedListItem<T>(){Value = value, Next = null};
+                var tmp = head;
+                while (tmp.Next != null)
+                {
+                    tmp = tmp.Next;
+                }
+
+                tmp.Next = new LinkedListItem<T>(){Value = value, Next = null};
+                tail = tmp.Next;
             }
         }
 
@@ -43,11 +67,11 @@ namespace PracticalWork.Algorithms
             if (IsEmpty())
             {
                 head = new LinkedListItem<T>() { Value = value, Next = null };
-                tail = head;
+                tail = new LinkedListItem<T>() { Value = value, Next = null };
             }
             else
             {
-                var el = new LinkedListItem<T>() {Value = value, Next = head};
+                var el = new LinkedListItem<T>() { Value = value, Next = head };
                 head = el;
             }
         }

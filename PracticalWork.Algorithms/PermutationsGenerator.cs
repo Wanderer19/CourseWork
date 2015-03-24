@@ -4,21 +4,15 @@ using System.Linq;
 
 namespace PracticalWork.Algorithms
 {
-    public class PermutationsGenerator<T>
+    public static class PermutationsGenerator
     {
-        private readonly List<T> elements;
-        public PermutationsGenerator(List<T> elements)
-        {
-            this.elements = elements;
-        }
-
-        public IEnumerable<IEnumerable<T>> GetPermutations()
+        public static IEnumerable<IEnumerable<T>> GetPermutations<T>(List<T> elements)
         {
             var permutations = MakePermutations(new int[elements.Count()], 0);
-            return permutations.Select(permutation => permutation.Select(i => elements[i]));
+            return permutations.Where(permutation => permutation.Count() != 0).Select(permutation => permutation.Select(i => elements[i]));
         }
 
-        static IEnumerable<IEnumerable<int>> MakePermutations(int[] permutation, int position)
+        private static IEnumerable<IEnumerable<int>> MakePermutations(int[] permutation, int position)
         {
             if (position == permutation.Length)
             {

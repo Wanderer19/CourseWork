@@ -10,6 +10,7 @@ namespace Algorithms.Tasks
     {
         static void Main(string[] args)
         {
+            var linkedList = new LinkedList<int>();
             
         }
     }

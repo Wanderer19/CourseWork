@@ -46,10 +46,11 @@
   <ItemGroup>
     <Compile Include="BinaryTreeUtils\BinaryTree.cs" />
     <Compile Include="BinaryTreeUtils\BinaryTreeItem.cs" />
-    <Compile Include="LinkedList.cs" />
+    <Compile Include="LinkedListUtils\LinkedList.cs" />
+    <Compile Include="LinkedListUtils\LinkedListItem.cs" />
     <Compile Include="PermutationsGenerator.cs" />
     <Compile Include="QueueUtils\QueueItem.cs" />
-    <Compile Include="Sorters.cs" />
+    <Compile Include="SortersUtils\Sorters.cs" />
     <Compile Include="StackUtils\Stack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

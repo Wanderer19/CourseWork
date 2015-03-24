@@ -20,11 +20,14 @@ namespace PracticalWork.Algorithms
             //Console.WriteLine(searcher.LinearSearch(unsortedArray, 1));
             //Console.WriteLine(searcher.BinarySearch(sortedArray, 1));
 
-            //var list = new LinkedList<int>();
-            //list.EmplaceBack(1);
-            //list.EmplaceBack(2);
-            //list.EmplaceFront(100);
+            var list = new LinkedListUtils.LinkedList<int>();
+            list.EmplaceBack(1);
+            list.EmplaceBack(2);
+            list.EmplaceFront(100);
 
+            var r = list.ToList();
+
+            var x = 0;
             //foreach (var el in list)
             //{
             //    Console.WriteLine(el);
