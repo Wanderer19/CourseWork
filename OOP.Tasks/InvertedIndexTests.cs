@@ -33,6 +33,18 @@ namespace OOP.Tasks
                     {"lol", new List<int>(){1}}
                 }
             };
+
+            yield return new object[]
+            {
+                new Document[]{new Document(1, "lol Lol"), new Document(2, "lol, lkfnk45jg lol2"),  new Document(3, "LOL !!!AHAHA Lol2") }, 
+                new Dictionary<string, List<int>>()
+                {
+                    {"lol", new List<int>(){1, 2, 3}},
+                    {"lol2", new List<int>(){2, 3}},
+                    {"lkfnk45jg", new List<int>(){2}},
+                    {"ahaha", new List<int>(){3}}
+                }
+            };
         } 
     }
 }

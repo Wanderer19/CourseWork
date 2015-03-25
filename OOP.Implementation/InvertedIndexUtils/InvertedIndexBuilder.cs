@@ -11,7 +11,7 @@ namespace OOP.Implementation.InvertedIndexUtils
         {
             var result = new Dictionary<string, List<int>>();
 
-            foreach (var document in documents)
+            foreach (var document in documents.OrderBy(i => i.Id))
             {
                 var documentTextWords = Regex.Split(document.Text.ToLower(), @"\W+")
                                                 .Where(word => word != "")
@@ -37,7 +37,7 @@ namespace OOP.Implementation.InvertedIndexUtils
                                                             .Select(ii => Tuple.Create(ii, document.Id))
                                        )
                                 .GroupBy(i => i.Item1)
-                                .ToDictionary(i => i.Key, i => i.Select(g => g.Item2).ToList());
+                                .ToDictionary(i => i.Key, i => i.Select(g => g.Item2).OrderBy(j => j).ToList());
         } 
     }
 }
