@@ -49,6 +49,7 @@
     <Compile Include="BracketsSequenceCheckerTests.cs" />
     <Compile Include="ComplexTests.cs" />
     <Compile Include="FrequencyDictionaryTests.cs" />
+    <Compile Include="InvertedIndexTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
