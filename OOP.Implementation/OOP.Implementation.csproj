@@ -47,7 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BracketSequenceChecker.cs" />
+    <Compile Include="CalculatorUtils\Value.cs" />
     <Compile Include="Complex.cs" />
+    <Compile Include="FigureUtils\IFigure.cs" />
+    <Compile Include="FigureUtils\Rectangle.cs" />
+    <Compile Include="FigureUtils\Square.cs" />
+    <Compile Include="FigureUtils\Triangle.cs" />
     <Compile Include="FrequencyDictionary.cs" />
     <Compile Include="InvertedIndexUtils\Document.cs" />
     <Compile Include="InvertedIndexUtils\InvertedIndexBuilder.cs" />

@@ -27,7 +27,7 @@ namespace OOP.Tasks
             };
             yield return new object[]
             {
-                new Document[]{new Document(1, "lol Lol"), }, 
+                new[]{new Document(1, "lol Lol"), }, 
                 new Dictionary<string, List<int>>()
                 {
                     {"lol", new List<int>(){1}}
@@ -36,7 +36,7 @@ namespace OOP.Tasks
 
             yield return new object[]
             {
-                new Document[]{new Document(1, "lol Lol"), new Document(2, "lol, lkfnk45jg lol2"),  new Document(3, "LOL !!!AHAHA Lol2") }, 
+                new[]{new Document(1, "lol Lol"), new Document(2, "lol, lkfnk45jg lol2"),  new Document(3, "LOL !!!AHAHA Lol2") }, 
                 new Dictionary<string, List<int>>()
                 {
                     {"lol", new List<int>(){1, 2, 3}},

@@ -1,8 +1,9 @@
 ﻿using System;
+using OOP.Implementation.CalculatorUtils;
 
 namespace OOP.Implementation
 {
-    public class Complex
+    public class Complex :Value
     {
         public double Real { get; private set; }
         public double Imaginary { get; private set; }
@@ -64,6 +65,30 @@ namespace OOP.Implementation
         public override string ToString()
         {
             return string.Format("[ {0} + {1}i ]", Real, Imaginary);
+        }
+
+        protected override Value Add(Value other)
+        {
+            var o = (Complex) other;
+            return this.Add(o);
+        }
+
+        protected override Value Sub(Value other)
+        {
+            var o = (Complex)other;
+            return this.Sub(o);
+        }
+
+        protected override Value Mult(Value other)
+        {
+            var o = (Complex)other;
+            return this.Mult(o);
+        }
+
+        protected override Value Devide(Value other)
+        {
+            var o = (Complex)other;
+            return this.Devide(o);
         }
     }
 }
