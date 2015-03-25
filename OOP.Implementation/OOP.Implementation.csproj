@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BracketSequenceChecker.cs" />
     <Compile Include="Complex.cs" />
     <Compile Include="FrequencyDictionary.cs" />
     <Compile Include="Program.cs" />

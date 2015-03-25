@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace OOP.Implementation
 {
-    public class FrequencyDictionary
+    public static class FrequencyDictionary
     {
 
         public static Dictionary<string, int> GetFrequenciesAtText(string text)

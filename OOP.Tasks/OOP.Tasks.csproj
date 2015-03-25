@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BracketsSequenceCheckerTests.cs" />
     <Compile Include="ComplexTests.cs" />
     <Compile Include="FrequencyDictionaryTests.cs" />
     <Compile Include="Program.cs" />
