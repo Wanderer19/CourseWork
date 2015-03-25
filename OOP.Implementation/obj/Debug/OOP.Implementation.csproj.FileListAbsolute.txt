@@ -4,3 +4,9 @@ C:\Users\1\Desktop\files\CourseWork\OOP.Implementation\bin\Debug\OOP.Implementat
 C:\Users\1\Desktop\files\CourseWork\OOP.Implementation\obj\Debug\OOP.Implementation.csprojResolveAssemblyReference.cache
 C:\Users\1\Desktop\files\CourseWork\OOP.Implementation\obj\Debug\OOP.Implementation.exe
 C:\Users\1\Desktop\files\CourseWork\OOP.Implementation\obj\Debug\OOP.Implementation.pdb
+C:\Users\asus\Desktop\CourseWork\OOP.Implementation\bin\Debug\OOP.Implementation.exe.config
+C:\Users\asus\Desktop\CourseWork\OOP.Implementation\bin\Debug\OOP.Implementation.exe
+C:\Users\asus\Desktop\CourseWork\OOP.Implementation\bin\Debug\OOP.Implementation.pdb
+C:\Users\asus\Desktop\CourseWork\OOP.Implementation\obj\Debug\OOP.Implementation.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\CourseWork\OOP.Implementation\obj\Debug\OOP.Implementation.exe
+C:\Users\asus\Desktop\CourseWork\OOP.Implementation\obj\Debug\OOP.Implementation.pdb

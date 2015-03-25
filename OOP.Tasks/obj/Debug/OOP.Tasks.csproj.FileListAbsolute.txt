@@ -8,3 +8,13 @@ C:\Users\1\Desktop\files\CourseWork\OOP.Tasks\bin\Debug\nunit.framework.xml
 C:\Users\1\Desktop\files\CourseWork\OOP.Tasks\obj\Debug\OOP.Tasks.csprojResolveAssemblyReference.cache
 C:\Users\1\Desktop\files\CourseWork\OOP.Tasks\obj\Debug\OOP.Tasks.exe
 C:\Users\1\Desktop\files\CourseWork\OOP.Tasks\obj\Debug\OOP.Tasks.pdb
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\bin\Debug\OOP.Tasks.exe.config
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\bin\Debug\OOP.Tasks.exe
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\bin\Debug\OOP.Tasks.pdb
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\bin\Debug\nunit.framework.dll
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\bin\Debug\OOP.Implementation.exe
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\bin\Debug\OOP.Implementation.pdb
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\bin\Debug\nunit.framework.xml
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\obj\Debug\OOP.Tasks.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\obj\Debug\OOP.Tasks.exe
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\obj\Debug\OOP.Tasks.pdb
