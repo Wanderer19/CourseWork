@@ -1,6 +1,9 @@
 калькулятор
 обратная польская запись
 
+CodeKata (string calcualtor)
+perl 2 cource 1 lesson (suffix prefix)
+про анаграммы (код ката)
 
 ООП
 	что-то со строками
