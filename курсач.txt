@@ -20,7 +20,9 @@ perl 2 cource 1 lesson (suffix prefix)
 	
 	календарь + см тимус
 	
-	
+enums
+delegate
+
 перегруженные конструкторы и методы
 
 идентезры доступа (private, public, readonly, protected)

@@ -49,6 +49,13 @@
     <Compile Include="BracketSequenceChecker.cs" />
     <Compile Include="CalculatorUtils\Value.cs" />
     <Compile Include="Complex.cs" />
+    <Compile Include="CompositeUtils\Bus.cs" />
+    <Compile Include="CompositeUtils\Cabinet.cs" />
+    <Compile Include="CompositeUtils\Card.cs" />
+    <Compile Include="CompositeUtils\Chassis.cs" />
+    <Compile Include="CompositeUtils\CompositeEquipment.cs" />
+    <Compile Include="CompositeUtils\Equipment.cs" />
+    <Compile Include="CompositeUtils\FloppyDisk.cs" />
     <Compile Include="FigureUtils\IFigure.cs" />
     <Compile Include="FigureUtils\Rectangle.cs" />
     <Compile Include="FigureUtils\Square.cs" />
@@ -64,6 +71,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CloneUtils\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />

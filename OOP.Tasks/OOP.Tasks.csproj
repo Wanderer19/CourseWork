@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="BracketsSequenceCheckerTests.cs" />
     <Compile Include="ComplexTests.cs" />
+    <Compile Include="CompositeTests.cs" />
     <Compile Include="FigureTests.cs" />
     <Compile Include="FrequencyDictionaryTests.cs" />
     <Compile Include="InvertedIndexTests.cs" />
