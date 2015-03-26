@@ -19,7 +19,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>.\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -48,9 +48,12 @@
   <ItemGroup>
     <Compile Include="BracketsSequenceCheckerTests.cs" />
     <Compile Include="ComplexTests.cs" />
+    <Compile Include="FigureTests.cs" />
     <Compile Include="FrequencyDictionaryTests.cs" />
+    <Compile Include="InvertedIndexTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WordTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
