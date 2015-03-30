@@ -1,0 +1,59 @@
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		Свое дерево
+	</title>
+
+</head>
+<body>
+	<center>
+		<H1>Свое дерево</H1>
+	</center>
+	<p>
+	<h3>Условие задачи</h3>
+	 Реализовать Generic класс BinaryTree&lt;T&gt;, у которого должны быть такие публичные методы : 
+	<ol align="centert">
+		<li> 
+			<b>void AddToTree(T value);</b> (Добавить элемент в дерево)
+		</li>
+		<li>
+			<b>bool Find(T key);</b> (Проверить, есть ли такой элемент в дереве)
+		</li>
+		<li>
+			<b>IEnumerable&lt;T&gt; InfixTraverse();</b> (Вернуть все элементы дерева, порядок которых должен соответствовать инфиксному 
+			обходу дерева)
+		</li>
+		<li>
+			<b>IEnumerable&lt;T&gt; PrefixTraverse();</b> (Вернуть все элементы дерева, порядок которых должен соответствовать префиксному
+			обходу дерева)
+		</li>
+		<li>
+			<b>IEnumerable&lt;T&gt; PostfixTraverse();</b> (Вернуть все элементы дерева, порядок которых должен соответствовать постфиксному
+			обходу дерева)
+		</li>
+	</ol>
+	</p>
+	<p>
+	<h3>Материалы для предварительного изучения</h3>
+		<ol>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/512aeb7t.aspx">Generic классы</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/ms173160.aspx">Исключения</a>
+			</li>
+			<li>
+				<a target="blank" href="https://ru.wikipedia.org/wiki/Двоичное_дерево_поиска">Про дерево и его обход</a>
+			</li>
+		</ol>
+	</p>
+	<p>
+		<h3>
+			Указания к решению
+		</h3>
+		Для решения понадобится дополнительный generic класс, который представляет элемент стека.
+		Внутри него должны быть 3 поля (значение элемента и ссылки на правого и левого ребенка)
+		Все обходы выполняются при помощи рекурсии.
+	</p>
+
+</body>

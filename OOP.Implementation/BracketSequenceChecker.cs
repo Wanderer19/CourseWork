@@ -15,7 +15,7 @@ namespace OOP.Implementation
 
         public static bool Check(string bracketSequence)
         {
-            var stack = new Stack<char>();
+            var stack = new PracticalWork.Algorithms.StackUtils.Stack<char>();
             foreach (var ch in bracketSequence)
             {
                 if (Brackets.Keys.Contains(ch))
@@ -31,7 +31,7 @@ namespace OOP.Implementation
                     }
                 }
             }
-            return stack.Count == 0;
+            return stack.IsEmpty();
         }
     }
 }

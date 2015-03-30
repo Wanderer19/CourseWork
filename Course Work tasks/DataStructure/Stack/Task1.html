@@ -1,0 +1,58 @@
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		Свой стек
+	</title>
+
+</head>
+<body>
+	<center>
+		<H1>Свой стек</H1>
+	</center>
+	<p>
+	<h3>Условие задачи</h3>
+	 Реализовать Generic класс Stack&lt;T&gt;, поддерживащий такие операции : 
+	<ol align="centert">
+		<li> 
+			<b>void Push(T value);</b> (Втолкнуть элемент в стек)
+		</li>
+		<li>
+			<b>T Pop();</b> (Вытолкнуть элемент с вершины стека; если стек пусть выбросить исключение InvalidOperationException)
+		</li>
+		<li>
+			<b>T Peek();</b> (Вернуть элемент с вершины стека, не выталкивая его оттуда; если стек пусть выбросить исключение InvalidOperationException)
+		</li>
+		<li>
+			<b>Stack&lt;T&gt; Clone();</b> (Клонировать текущий экземпляр, желательно за О(1))
+		</li>
+		<li>
+			<b>bool IsEmpty();</b> (Проверка стека на пустоту);
+		</li>
+		<li>
+			<b>void Clear();</b> (Очищает стек);
+		</li>
+	</ol>
+	</p>
+	<p>
+	<h3>Материалы для предварительного изучения</h3>
+		<ol>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/512aeb7t.aspx">Generic классы</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/ms173160.aspx">Исключения</a>
+			</li>
+			<li>
+				<a target="blank" href="https://ru.wikipedia.org/wiki/Стек">Про стек</a>
+			</li>
+		</ol>
+	</p>
+	<p>
+		<h3>
+			Указания к решению
+		</h3>
+		Для решения понадобится дополнительный generic класс, который представляет элемент стека.
+		Внутри него должны быть 2 поля (значение элемента и ссылка на следующий элемент в стеке)
+	</p>
+
+</body>

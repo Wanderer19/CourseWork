@@ -1,0 +1,52 @@
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		Своя очередь
+	</title>
+
+</head>
+<body>
+	<center>
+		<H1>Своя очередь</H1>
+	</center>
+	<p>
+	<h3>Условие задачи</h3>
+	 Реализовать Generic класс Queue&lt;T&gt;, поддерживащий такие операции : 
+	<ol align="centert">
+		<li> 
+			<b>void Enqueue(T value);</b> (Втолкнуть элемент в очередь)
+		</li>
+		<li>
+			<b>T Dequeue();</b> (Вытолкнуть элемент из начала очереди; если очередь пуста выбросить исключение InvalidOperationException)
+		</li>
+		<li>
+			<b>T Peek();</b> (Вернуть элемент из начала очереди, не выталкивая его оттуда; если очередь пуста выбросить исключение InvalidOperationException)
+		</li>
+		<li>
+			<b>bool IsEmpty();</b> (Проверка очереди на пустоту);
+		</li>
+	</ol>
+	</p>
+	<p>
+	<h3>Материалы для предварительного изучения</h3>
+		<ol>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/512aeb7t.aspx">Generic классы</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/ms173160.aspx">Исключения</a>
+			</li>
+			<li>
+				<a target="blank" href="https://ru.wikipedia.org/wiki/Очередь_(программирование)">Про очередь</a>
+			</li>
+		</ol>
+	</p>
+	<p>
+		<h3>
+			Указания к решению
+		</h3>
+		Для решения понадобится дополнительный generic класс, который представляет элемент очереди.
+		Внутри него должны быть 2 поля (значение элемента и ссылка на следующий элемент в очереди)
+	</p>
+
+</body>

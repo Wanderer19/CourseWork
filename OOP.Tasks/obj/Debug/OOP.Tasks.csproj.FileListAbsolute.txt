@@ -18,3 +18,5 @@ C:\Users\asus\Desktop\CourseWork\OOP.Tasks\nunit.framework.dll
 C:\Users\asus\Desktop\CourseWork\OOP.Tasks\OOP.Implementation.exe
 C:\Users\asus\Desktop\CourseWork\OOP.Tasks\OOP.Implementation.pdb
 C:\Users\asus\Desktop\CourseWork\OOP.Tasks\nunit.framework.xml
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\PracticalWork.Algorithms.exe
+C:\Users\asus\Desktop\CourseWork\OOP.Tasks\PracticalWork.Algorithms.pdb

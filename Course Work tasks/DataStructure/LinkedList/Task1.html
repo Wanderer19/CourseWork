@@ -1,0 +1,65 @@
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		Свой список
+	</title>
+
+</head>
+<body>
+	<center>
+		<H1>Свой список</H1>
+	</center>
+	<p>
+	<h3>Условие задачи</h3>
+	 Реализовать Generic класс LinkedList&lt;T&gt;, реализующий интерфейс IEnumerable&lt;T&gt;, поддерживающий такие операции
+	<ol align="centert">
+		<li> 
+			<b>void EmplaceBack(T value);</b> (Вставить элемент в конец списка)
+		</li>
+		<li>
+			<b>void EmplaceFront(T value);</b> (Вставить элемент в начало списка)
+		</li>
+		<li>
+			<b>Clear();</b> (Очищает список)
+		</li>
+		<li>
+			<b>T GetFirstItem();</b> (Вернуть первый элемент списка; если список пуст, то выбросить InvalidOperationException)
+		</li>
+		<li>
+			<b>T GetLastItem();</b>(Вернуть последний элемент списка; если список пуст, то выбросить InvalidOperationException)
+		</li>
+		<li>
+			<b>bool IsEmpty();</b> (Проверка списка на пустоту);
+		</li>
+		<li>
+			Все методы, которые поддерживаются Enumerable, для этого должнен быть реалиован метод 
+			<b>IEnumerator&lt;T&gt; GetEnumerator()</b>
+		</li>
+	</ol>
+	</p>
+	<p>
+	<h3>Материалы для предварительного изучения</h3>
+		<ol>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/512aeb7t.aspx">Generic классы</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/ms173160.aspx">Исключения</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/system.collections.ienumerable(v=vs.110).aspx">Про IEnumerable</a>
+			</li>
+			<li>
+				<a target="blank" href="https://ru.wikipedia.org/wiki/Связный_список">Про список</a>
+			</li>
+		</ol>
+	</p>
+	<p>
+		<h3>
+			Указания к решению
+		</h3>
+		Для решения понадобится дополнительный generic класс, который представляет элемент списка.
+		Внутри него должны быть 2 поля (значение элемента и ссылка на следующий элемент в стеке)
+	</p>
+
+</body>

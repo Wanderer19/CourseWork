@@ -98,6 +98,31 @@ namespace PracticalWork.Algorithms.BinaryTreeUtils
             }
         }
 
+        public IEnumerable<T> MyTraverse()
+        {
+            return MyTraverse(root);
+        }
+
+        private IEnumerable<T> MyTraverse(BinaryTreeItem<T> node)
+        {
+            if (node == null)
+            {
+                yield break;
+            }
+            else
+            {
+                foreach (var el in MyTraverse(node.RightChild))
+                {
+                    yield return el;
+                }
+                foreach (var el in MyTraverse(node.LeftChild))
+                {
+                    yield return el;
+                }
+                yield return node.Value;
+            }
+        }
+
         private bool Find(BinaryTreeItem<T> node, T key)
         {
             if (node == null)

@@ -75,6 +75,12 @@
   <ItemGroup>
     <Folder Include="CloneUtils\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PracticalWork.Algorithms\PracticalWork.Algorithms.csproj">
+      <Project>{0d42c418-e959-4a02-82ba-7ce37c258306}</Project>
+      <Name>PracticalWork.Algorithms</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
