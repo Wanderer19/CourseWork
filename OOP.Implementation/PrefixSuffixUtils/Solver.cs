@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace OOP.Implementation.PrefixSuffixUtils
 {
-    public class Task1
+    public static class Solver
     {
         public static Tuple<string, string, string> Solve(Word[] words)
         {

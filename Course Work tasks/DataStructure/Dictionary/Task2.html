@@ -1,0 +1,45 @@
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		Обратный индекс
+	</title>
+
+</head>
+<body>
+	<center>
+		<H1>Обратный индекс</H1>
+	</center>
+	<p>
+	<h3>Условие задачи</h3>
+	<ol>
+		<li>
+			Написать класс Document, в котором должны быть 2 свойства (или 2 публичных поля)
+			<ul>
+				<li>int Id; </li>
+				<li>string Text; </li>
+			</ul>
+		</li>
+		<li>
+			Написать статический класс InvertedIndexBuilder, в котором должен быть один статический метод:  <b> Dictionary&lt;string, List&lt;int&gt;&gt; BuildInvertedIndex(Document[] documents)</b><br>
+			На вход подается список документов<br>
+			На выход словарь, в котором ключи - слова из текстов всех документов, а значение - список id документов, в котором встречается данное слово, упорядоченный по возрастанию
+		</li>
+	</ol>
+	<p>
+	<h3>Материалы для предварительного изучения</h3>
+		<ol>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/x9fsa0sw.aspx">Про свойства</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/k7z0zy8k(v=vs.110).aspx">Про словари</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/ms131448(v=vs.110).aspx">Как разбить текст по данным разделителям</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/vstudio/bb348436(v=vs.100).aspx">Как удалить из списка повоторяющиеся элементы</a>
+			</li>
+		</ol>
+	</p>
+</body>

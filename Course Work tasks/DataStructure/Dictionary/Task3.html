@@ -1,0 +1,54 @@
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		Префиксы и суффиксы
+	</title>
+
+</head>
+<body>
+	<center>
+		<H1>Префиксы и суффиксы</H1>
+	</center>
+	<p>
+	<h3>Условие задачи</h3>
+	<ol>
+		<li>
+		Написать класс Word, который содержит 1 свойство: string Content;
+		<br>
+		2 метода:
+		<ul>
+			<li>
+				<b>IEnumerable&lt;string&gt; GetPrefixes();</b> (Возвращает все префиксы слова)
+			</li>
+			<li>
+				<b>IEnumerable&lt;string&gt; GetSuffixes();</b> (Возвращает все суффиксы слова)
+			</li>
+		</ul>
+		</li>
+		<li>
+		Написать статический класс Solver, который решает такую задачу:<br>
+		На вход список слов, обернутых в класс из пункта 1<br>
+		На выход  кортеж из 3 слов
+		word1, word2, word3, причем word3 = (префикс word1 или word2 ) и (суффикс word2 или word1), причем word3 должен быть максимальным по длине из всех таких кортежей, 
+		удовлетворяющим условию задачи.
+		<br>
+		Сигнатура метода должна быть такой:<br>
+		<b>Tuple&lt;string, string, string&gt; Solve(Word[] words);</b>
+		</li>
+	</ol>
+	</p>
+	<p>
+	<h3>Материалы для предварительного изучения</h3>
+		<ol>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/k7z0zy8k(v=vs.110).aspx">Про словари</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/dd268536(v=vs.110).aspx">Про кортежи</a>
+			</li>
+			<li>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/aka44szs(v=vs.110).aspx">Про метод взятия подстроки в строке(для реализации методо класса Word)</a>
+			</li>
+		</ol>
+	</p>
+</body>
