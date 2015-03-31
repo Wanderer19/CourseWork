@@ -1,0 +1,6 @@
+C:\Users\asus\Desktop\CourseWork\DataStructure.Solutions\bin\Debug\DataStructure.Solutions.exe.config
+C:\Users\asus\Desktop\CourseWork\DataStructure.Solutions\bin\Debug\DataStructure.Solutions.exe
+C:\Users\asus\Desktop\CourseWork\DataStructure.Solutions\bin\Debug\DataStructure.Solutions.pdb
+C:\Users\asus\Desktop\CourseWork\DataStructure.Solutions\obj\Debug\DataStructure.Solutions.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\CourseWork\DataStructure.Solutions\obj\Debug\DataStructure.Solutions.exe
+C:\Users\asus\Desktop\CourseWork\DataStructure.Solutions\obj\Debug\DataStructure.Solutions.pdb

@@ -52,8 +52,8 @@ namespace OOP.Tasks
         public void Test4()
         {
             var words = new Word[] {new Word("конкурентоспособность"), new Word("неконкурентоспособность")};
-            var result = Task1.Solve(words);
-            var result2 = Task1.SolveSecond(words);
+            var result = Solver.Solve(words);
+            var result2 = Solver.SolveSecond(words);
 
             Assert.That(new[] { result.Item1, result.Item2 }, Is.EquivalentTo(new[] { "конкурентоспособность", "неконкурентоспособность" }));
             Assert.That(result.Item3, Is.EqualTo("конкурентоспособность"));
@@ -65,8 +65,8 @@ namespace OOP.Tasks
         public void Test5()
         {
             var words = File.ReadAllLines("ruwords.txt").Select(word => new Word(word)).ToArray();
-            var result = Task1.Solve(words);
-            var result2 = Task1.SolveSecond(words);
+            var result = Solver.Solve(words);
+            var result2 = Solver.SolveSecond(words);
 
             Assert.That(result.Item3.Length, Is.EqualTo(21));
             Assert.That(result2.Item3.Length, Is.EqualTo(21));

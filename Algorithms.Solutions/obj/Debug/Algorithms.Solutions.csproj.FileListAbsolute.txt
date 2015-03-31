@@ -1,0 +1,6 @@
+C:\Users\asus\Desktop\CourseWork\Algorithms.Solutions\bin\Debug\Algorithms.Solutions.dll.config
+C:\Users\asus\Desktop\CourseWork\Algorithms.Solutions\bin\Debug\Algorithms.Solutions.dll
+C:\Users\asus\Desktop\CourseWork\Algorithms.Solutions\bin\Debug\Algorithms.Solutions.pdb
+C:\Users\asus\Desktop\CourseWork\Algorithms.Solutions\obj\Debug\Algorithms.Solutions.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\CourseWork\Algorithms.Solutions\obj\Debug\Algorithms.Solutions.dll
+C:\Users\asus\Desktop\CourseWork\Algorithms.Solutions\obj\Debug\Algorithms.Solutions.pdb

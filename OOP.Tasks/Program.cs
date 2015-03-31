@@ -13,7 +13,7 @@ namespace OOP.Tasks
         static void Main(string[] args)
         {
             var words = File.ReadAllLines("ruwords.txt").Select(word => new Word(word)).ToArray();
-            var result = Task1.Solve(words);
+            var result = Solver.Solve(words);
             File.WriteAllText("res.txt", string.Format("{0} - {1}", result.Item1, result.Item2));
             Console.WriteLine("{0} - {1}", result.Item1, result.Item2);
         }

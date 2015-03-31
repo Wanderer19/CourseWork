@@ -62,12 +62,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PracticalWork.Algorithms\PracticalWork.Algorithms.csproj">
-      <Project>{0d42c418-e959-4a02-82ba-7ce37c258306}</Project>
-      <Name>PracticalWork.Algorithms</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Tasks.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

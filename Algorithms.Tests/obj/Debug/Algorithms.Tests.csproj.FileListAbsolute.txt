@@ -1,0 +1,9 @@
+C:\Users\asus\Desktop\CourseWork\Algorithms.Tests\bin\Debug\Algorithms.Tests.dll
+C:\Users\asus\Desktop\CourseWork\Algorithms.Tests\bin\Debug\Algorithms.Tests.pdb
+C:\Users\asus\Desktop\CourseWork\Algorithms.Tests\bin\Debug\Algorithms.Solutions.dll
+C:\Users\asus\Desktop\CourseWork\Algorithms.Tests\bin\Debug\nunit.framework.dll
+C:\Users\asus\Desktop\CourseWork\Algorithms.Tests\bin\Debug\Algorithms.Solutions.pdb
+C:\Users\asus\Desktop\CourseWork\Algorithms.Tests\bin\Debug\nunit.framework.xml
+C:\Users\asus\Desktop\CourseWork\Algorithms.Tests\obj\Debug\Algorithms.Tests.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\CourseWork\Algorithms.Tests\obj\Debug\Algorithms.Tests.dll
+C:\Users\asus\Desktop\CourseWork\Algorithms.Tests\obj\Debug\Algorithms.Tests.pdb
