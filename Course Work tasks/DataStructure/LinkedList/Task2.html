@@ -18,38 +18,32 @@
     <div class="container">
         <!-- ngIf: bonusBalls --><div ng-if="bonusBalls" class="b-guest-page__fans-smile ng-scope"></div><!-- end ngIf: bonusBalls -->
 
-	    <h1 class="b-guest-page__title ng-binding" ng-bind-html="title|nl2br">Свой список</h1>
+	    <h1 class="b-guest-page__title ng-binding" ng-bind-html="title|nl2br">Зоомагазин</h1>
 		<div class="row">
 			<div class="col-xs-8">
 				<div class="b-guest-page__txt ng-binding" ng-bind-html="quest">
 				<p>
 							<p>
 	<h3>Условие задачи</h3>
-	 Реализовать Generic класс LinkedList&lt;T&gt;, реализующий интерфейс IEnumerable&lt;T&gt;, поддерживающий такие операции
-	<ol align="centert">
-		<li> 
-			<b>void EmplaceBack(T value);</b> (Вставить элемент в конец списка)
-		</li>
-		<li>
-			<b>void EmplaceFront(T value);</b> (Вставить элемент в начало списка)
-		</li>
-		<li>
-			<b>Clear();</b> (Очищает список)
-		</li>
-		<li>
-			<b>T GetFirstItem();</b> (Вернуть первый элемент списка; если список пуст, то выбросить InvalidOperationException)
-		</li>
-		<li>
-			<b>T GetLastItem();</b>(Вернуть последний элемент списка; если список пуст, то выбросить InvalidOperationException)
-		</li>
-		<li>
-			<b>bool IsEmpty();</b> (Проверка списка на пустоту);
-		</li>
-		<li>
-			Все методы, которые поддерживаются Enumerable, для этого должнен быть реалиован метод 
-			<b>IEnumerator&lt;T&gt; GetEnumerator()</b>
-		</li>
-	</ol>
+		В приюте для животных есть только собаки и кошки,а работа осуществляется в порядке очереди. Люди должны забиратья всегда &quot;самое
+		старое&quot;(по времени пребывания в питомнике) животное, но могут выбрать кошку или собаку (животное в любом случе будет &quot;самым старым&quot;).
+		Нельзя выбрать любое понравившееся животное.
+		<br>
+		Создайте класс PetShop, в котором есть данные методы:
+		<ol>
+			<li>
+				<b>void Enqueue(Animal animal);</b> (поместить животное в питомник)
+			</li>
+			<li>
+				<b>Animal DequeueAny();</b> (забрать самое старое животное из питомника, если животных нет, то вернуть Null)
+			</li>
+			<li>
+				<b>Animal DequeueCat();</b> (забрать самого старого кота из питомника, если котов нет, то вернуть Null)
+			</li>
+			<li>
+				<b>Animal DequeueDog();</b> (забрать самую старую собаку из питомника, если собак нет, то вернуть Null)
+			</li>
+		</ol>
 	</p>
 				</p></div>
 				<div class="b-guest-page__help-sep"></div>
@@ -60,9 +54,19 @@
 						Указания к решению:
 					</div>
 					<div class="form-group">
+						
 						<p>
-							Для решения понадобится дополнительный generic класс, который представляет элемент списка.
-							Внутри него должны быть 2 поля (значение элемента и ссылка на следующий элемент в стеке)
+							<ol>
+								<li>
+									Вы должны использовать связный список, созданный вами в первой задаче
+								</li>
+								<li>
+									Создайте абстрактный класс <b>Animal</b> с виртуалным свойством <b>string Name {get;set;} </b>
+								</li>
+								<li>
+									Создайте классы <b>Cat</b> и <b>Dog</b>, которые унаследованы от <b>Animal</b>. Переопределите в них свойство <b>Name</b>
+								</li>
+							</ol>
 						</p>
 					</div>
 				</div>
@@ -77,16 +81,9 @@
 			<div class="col-xs-8">
 				<div class="b-guest-help__personages">
                     <div class="b-guest-help__personages__text ng-binding" ng-bind-html="hint|nl2br">Ищи подсказку по этим ссылкам:
-<br>		<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/512aeb7t.aspx">Generic классы</a>
-			<br>
-			
-				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/ms173160.aspx">Исключения</a>
-			<br>
-			
-				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/system.collections.ienumerable(v=vs.110).aspx">Про IEnumerable</a>
-			<br>
-			
-				<a target="blank" href="https://ru.wikipedia.org/wiki/Связный_список">Про список</a>
+<br>		<a target="blank" href="Task1.html">Свой список</a><br>
+			<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/sf985hc5.aspx">Абстрактные классы</a><br>
+			<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/9fkccyh4.aspx">Виртуальные функции, свойства</a>
 			<br></div>
 				</div>
 			</div>		
