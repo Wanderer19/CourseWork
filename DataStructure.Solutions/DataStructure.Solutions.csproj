@@ -55,6 +55,7 @@
     <Compile Include="LinkedListTasks\PetShopTask\Cat.cs" />
     <Compile Include="LinkedListTasks\PetShopTask\Dog.cs" />
     <Compile Include="LinkedListTasks\PetShopTask\PetShop.cs" />
+    <Compile Include="QueueTasks\BFSTask\BFS.cs" />
     <Compile Include="QueueTasks\QueueUtils\Queue.cs" />
     <Compile Include="QueueTasks\QueueUtils\QueueItem.cs" />
     <Compile Include="StackTasks\BracketSequenceChecker.cs" />
