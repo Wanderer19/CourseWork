@@ -47,6 +47,7 @@
     <Compile Include="ComplexTests.cs" />
     <Compile Include="CompositeTests.cs" />
     <Compile Include="FigureTests.cs" />
+    <Compile Include="LibraryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

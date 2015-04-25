@@ -1,7 +1,6 @@
 ﻿using System;
-using OOP.Solutions.FigureUtils;
 
-namespace OOP.Implementation.FigureUtils
+namespace OOP.Solutions.FigureUtils
 {
     public class Triangle : IFigure
     {

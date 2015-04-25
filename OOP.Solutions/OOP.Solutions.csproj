@@ -51,6 +51,9 @@
     <Compile Include="FigureUtils\Rectangle.cs" />
     <Compile Include="FigureUtils\Square.cs" />
     <Compile Include="FigureUtils\Triangle.cs" />
+    <Compile Include="LibraryUtils\Article.cs" />
+    <Compile Include="LibraryUtils\Library.cs" />
+    <Compile Include="LibraryUtils\Magazine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

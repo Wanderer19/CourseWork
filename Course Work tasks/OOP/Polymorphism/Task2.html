@@ -18,30 +18,44 @@
     <div class="container">
         <!-- ngIf: bonusBalls --><div ng-if="bonusBalls" class="b-guest-page__fans-smile ng-scope"></div><!-- end ngIf: bonusBalls -->
 
-	    <h1 class="b-guest-page__title ng-binding" ng-bind-html="title|nl2br">Полиморфизм</h1>
+	    <h1 class="b-guest-page__title ng-binding" ng-bind-html="title|nl2br">Паттерн "Компоновшик"</h1>
 		<div class="row">
 			<div class="col-xs-8">
-                <div class="b-guest-page__label ng-binding">Решите следующие задачи:</div>
 				<div class="b-guest-page__txt ng-binding" ng-bind-html="quest">
 				<p>
-<ol>
-		<li>
-			<a href="Task1.html"> Фигуры</a>
-		</li>
-		<li>
-			<a href="Task2.html"> Паттерн "Компоновщик"</a>
-		</li>
-	</ol>
+							<p>
+	<h3>Условие задачи</h3>
+	 
+	</p>
 				</p></div>
 				<div class="b-guest-page__help-sep"></div>
 			</div>
 			<div class="col-xs-4">
 				<div class="b-guest-page__answer">
-					
+					<div class="b-guest-page__label">
+						Указания к решению:
+					</div>
+					<div class="form-group">
+						<p>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>	
+	
 	</div>
+	</div>
+		<div class="container">
+		<div class="row">
+			<div class="col-xs-8">
+				<div class="b-guest-help__personages">
+                    <div class="b-guest-help__personages__text ng-binding" ng-bind-html="hint|nl2br">Ищи подсказку по этим ссылкам:
+<br><a target="blank" href="https://msdn.microsoft.com/ru-ru/library/512aeb7t.aspx">Generic классы</a><br>
+				<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/ms173160.aspx">Исключения</a><br>
+				<a target="blank" href="https://ru.wikipedia.org/wiki/Двоичное_дерево_поиска">Про дерево и его обход</a></div>
+				</div>
+			</div>		
+		</div>
 	</div>
 </body>

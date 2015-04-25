@@ -2,3 +2,4 @@ C:\Users\asus\Desktop\CourseWork\OOP.Solutions\bin\Debug\OOP.Solutions.dll
 C:\Users\asus\Desktop\CourseWork\OOP.Solutions\bin\Debug\OOP.Solutions.pdb
 C:\Users\asus\Desktop\CourseWork\OOP.Solutions\obj\Debug\OOP.Solutions.dll
 C:\Users\asus\Desktop\CourseWork\OOP.Solutions\obj\Debug\OOP.Solutions.pdb
+C:\Users\asus\Desktop\CourseWork\OOP.Solutions\obj\Debug\OOP.Solutions.csprojResolveAssemblyReference.cache
