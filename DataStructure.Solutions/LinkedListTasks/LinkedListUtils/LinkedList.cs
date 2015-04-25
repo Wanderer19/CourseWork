@@ -8,8 +8,9 @@ namespace DataStructure.Solutions.LinkedListTasks.LinkedListUtils
     {
         private LinkedListItem<T> head;
         private LinkedListItem<T> tail;
-        private LinkedListItem<T> current;  
+        private LinkedListItem<T> current;
 
+        public LinkedListItem<T> First { get { return head; } } 
         public T GetFirstItem()
         {
             if (!IsEmpty())
@@ -30,6 +31,26 @@ namespace DataStructure.Solutions.LinkedListTasks.LinkedListUtils
 
         }
 
+        public void Remove(LinkedListItem<T> item)
+        {
+            if (item == head)
+            {
+                head = item.Next;
+                return;
+            }
+            else
+            {
+                var tmp = head;
+                var prev = head;
+                while (tmp != item)
+                {
+                    prev = tmp;
+                    tmp = tmp.Next;
+                }
+
+                prev.Next = tmp.Next;
+            }
+        }
         public LinkedList()
         {
             head = null;

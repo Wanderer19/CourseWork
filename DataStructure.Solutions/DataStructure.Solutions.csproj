@@ -51,6 +51,10 @@
     <Compile Include="DictionaryTasks\PrefixSuffixUtils\Word.cs" />
     <Compile Include="LinkedListTasks\LinkedListUtils\LinkedList.cs" />
     <Compile Include="LinkedListTasks\LinkedListUtils\LinkedListItem.cs" />
+    <Compile Include="LinkedListTasks\PetShopTask\Animal.cs" />
+    <Compile Include="LinkedListTasks\PetShopTask\Cat.cs" />
+    <Compile Include="LinkedListTasks\PetShopTask\Dog.cs" />
+    <Compile Include="LinkedListTasks\PetShopTask\PetShop.cs" />
     <Compile Include="QueueTasks\QueueUtils\Queue.cs" />
     <Compile Include="QueueTasks\QueueUtils\QueueItem.cs" />
     <Compile Include="StackTasks\BracketSequenceChecker.cs" />
