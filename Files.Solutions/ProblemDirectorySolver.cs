@@ -27,7 +27,7 @@ namespace Files.Solutions
             }
         }
 
-        public IEnumerable<int> GetNumbersFromFile(FileInfo file)
+        private IEnumerable<int> GetNumbersFromFile(FileInfo file)
         {
             var fileFullName = file.DirectoryName + "\\" + file.Name;
             var text = File.ReadAllText(fileFullName);

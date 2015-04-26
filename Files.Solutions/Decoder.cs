@@ -25,11 +25,6 @@ namespace Files.Solutions
                 else if (word == wordEndId)
                 {
                     result.Append(Convert.ToChar(96 + count));
-                    if (i < cipherWords.Length - 1 && cipherWords[i + 1] == wordEndId)
-                    {
-                        i++;
-                        result.Append(" ");
-                    }
                     count = 0;
                 }
             }
