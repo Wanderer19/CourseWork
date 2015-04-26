@@ -47,6 +47,7 @@
     <Compile Include="BfsTests.cs" />
     <Compile Include="BinaryTreeTests.cs" />
     <Compile Include="BracketsSequenceCheckerTests.cs" />
+    <Compile Include="ExoticCloneTests.cs" />
     <Compile Include="FrequencyDictionaryTests.cs" />
     <Compile Include="InvertedIndexTests.cs" />
     <Compile Include="LinkedListTests.cs" />

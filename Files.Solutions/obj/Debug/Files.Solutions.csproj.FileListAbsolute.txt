@@ -1,0 +1,6 @@
+C:\Users\asus\Desktop\CourseWork\Files.Solutions\bin\Debug\Files.Solutions.exe.config
+C:\Users\asus\Desktop\CourseWork\Files.Solutions\bin\Debug\Files.Solutions.exe
+C:\Users\asus\Desktop\CourseWork\Files.Solutions\bin\Debug\Files.Solutions.pdb
+C:\Users\asus\Desktop\CourseWork\Files.Solutions\obj\Debug\Files.Solutions.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\CourseWork\Files.Solutions\obj\Debug\Files.Solutions.exe
+C:\Users\asus\Desktop\CourseWork\Files.Solutions\obj\Debug\Files.Solutions.pdb

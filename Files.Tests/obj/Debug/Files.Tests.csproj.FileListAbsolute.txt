@@ -1,0 +1,7 @@
+C:\Users\asus\Desktop\CourseWork\Files.Tests\bin\Debug\Files.Tests.dll
+C:\Users\asus\Desktop\CourseWork\Files.Tests\bin\Debug\Files.Tests.pdb
+C:\Users\asus\Desktop\CourseWork\Files.Tests\bin\Debug\nunit.framework.dll
+C:\Users\asus\Desktop\CourseWork\Files.Tests\bin\Debug\nunit.framework.xml
+C:\Users\asus\Desktop\CourseWork\Files.Tests\obj\Debug\Files.Tests.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\CourseWork\Files.Tests\obj\Debug\Files.Tests.dll
+C:\Users\asus\Desktop\CourseWork\Files.Tests\obj\Debug\Files.Tests.pdb
