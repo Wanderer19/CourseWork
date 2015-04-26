@@ -10,8 +10,9 @@ namespace Files.Solutions
     {
         static void Main(string[] args)
         {
-            var decoder = new  CodeConverterToHtml();
-            decoder.ConvertToHtml("AccountController.cs", "AccountController.cs.html");
+            var decoder = new Decoder();
+            var result = decoder.Decode("67.result", "Yo", "Nice");
+            Console.WriteLine(result);
         }
     }
 }

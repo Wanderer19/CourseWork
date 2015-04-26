@@ -15,16 +15,16 @@ namespace Files.Solutions
 
             var result = new StringBuilder();
             var count = 0;
-            for (var i = 0; i < cipherWords.Length; ++i)
+            foreach (var word in cipherWords)
             {
-                var word = cipherWords[i];
                 if (word == letterId)
                 {
                     count++;
                 }
                 else if (word == wordEndId)
                 {
-                    result.Append(Convert.ToChar(96 + count));
+                    result.Append(count != 0 ? Convert.ToChar(96 + count) : ' ');
+                
                     count = 0;
                 }
             }
