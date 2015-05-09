@@ -18,38 +18,69 @@
     <div class="container">
         <!-- ngIf: bonusBalls --><div ng-if="bonusBalls" class="b-guest-page__fans-smile ng-scope"></div><!-- end ngIf: bonusBalls -->
 
-	    <h1 class="b-guest-page__title ng-binding" ng-bind-html="title|nl2br">Алгоритмы</h1>
+	    <h1 class="b-guest-page__title ng-binding" ng-bind-html="title|nl2br">Подмножества</h1>
 		<div class="row">
 			<div class="col-xs-8">
-                <div class="b-guest-page__label ng-binding">Решите следующие задачи:</div>
 				<div class="b-guest-page__txt ng-binding" ng-bind-html="quest">
 				<p>
-						<ol>
-		<li>
-			<a href="Task1.html"> Поиск в массиве </a>
-		</li>
-		<li>
-			<a href="Task2.html"> Сортировки </a>
-		</li>
-		<li>
-			Рукурсивные алгоритмы
-			<ul>
-				<li><a href="Task3.html"> Перестановки </a></li>
-				<li><a href="Task4.html"> Генерация слов </a></li>
-				<li><a href="Task5.html"> Подмножества </a></li>
-			</ul>				
-		</li>
-	</ol>
+							<p>
+	<h3>Условие задачи</h3>
+		 Создайте статический класс <b> SubsetsGenerator</b> с единственным публичным методом :<br>
+		 <b>IEnumerable<T[]> GenerateSubstes<T>(T[] set);</b> возвращает все подмножества данного множества<br><br>
+		 		<p>
+							<ol>
+							<li>
+							Представьте, что мы пытаемся найти подмножества множества S = {a1, a2, a3, a4, an}<br>
+							n = 0<br>
+							Одно пустое подмножество: {}<br>
+							n = 1 <br>
+							B {a1} есть 2 подмножества: {}, {a1}<br>
+							n = 2 <br>
+							В {a1, a2} есть 4 подмножества: {}, {a1}, {a2}, {a1, a2}<br>
+							Теперь самое интересное. Нам надо найти способ генерации решения для n = 3, основанный на предыдущих решениях<br>
+							Сравним решения для n=2 и n=3<br>
+							P(2) = {}, {a1}, {a2}, {a1, a2}<br>
+							P(3) = {}, {a1}, {a2}, {a1, a2}, {a3}, {a1, a3}, {a2, a3}, {a1, a2, a3}<br>
+							Разница между этими решениями в том, что в P(2) нет подмножеств, содержащих a3.
+							Построение P(n) для общего случая - вычисялем P(n -1), клонируем его и добавляем an в каждый из этих клонируемых наборов.
+							</li>
+							<li>
+								При генерации множества каждый элемент может <br>
+								(1)принадлежать подмножеству (состояние "да") и (2) не принадлежать подмножеству(состояние "нет").<br>
+								Это означает, что каждое подмножество является последовательностью значений "да" и "нет".<br>
+								Таким образом, мы получаем 2^n возможных подмножеств.<br>
+								Если каждое "да" рассматривать как 1, а каждое "нет" как 0, то любое подмножество можно представить в виде двоичной строки.<br>
+								Генерация всех подмножеств превращается в получение всех двоичных (целых) чисел.<br>
+								В рекурсивно заходе для определенной позиции мы ставим в маске 1 и генеррируем дальше всевозможные маски для больших позиций, потом ставим
+								0 и генерируем так же всевозможные маски для следующих позиций.
+							</li>
+							</ol>
+						</p>
+	</p>
 				</p></div>
 				<div class="b-guest-page__help-sep"></div>
 			</div>
 			<div class="col-xs-4">
 				<div class="b-guest-page__answer">
-					
+				
 				</div>
 			</div>
 		</div>
 	</div>	
+	
 	</div>
+	</div>
+		<div class="container">
+		<div class="row">
+			<div class="col-xs-8">
+				<div class="b-guest-help__personages">
+                    <div class="b-guest-help__personages__text ng-binding" ng-bind-html="hint|nl2br">Ищи подсказку по этим ссылкам:
+						<br>
+						<a target="blank" href="https://ulearn.azurewebsites.net/Course/BasicProgramming/Slide/114">Видеоурок про подмножества</a>
+						<br>
+					</div>
+				</div>
+			</div>		
+		</div>
 	</div>
 </body>
