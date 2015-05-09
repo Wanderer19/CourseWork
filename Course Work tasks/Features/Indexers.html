@@ -25,21 +25,43 @@
 				<p>
 							<p>
 	<h3>”словие задачи</h3>
-		 
+		 Ќапишите класс, который облегчит игру в "крестики - нолики". —разу обобщим задачу, после будет на 3 на 3, а заданного
+		 пользователем размера.<br>
+		  ласс GameField должен принимать в контсрукторе единственный аргумент - размер пол€. <br>
+		 ¬нутри класса должны быть реализованы такие методы :<br>
+		 <ol>
+			<li>
+				<b>CellMark[][] GetRows();</b> ¬озвращает массив строк пол€
+			</li>
+			<li>
+				<b>CellMark[][] GetColumns();</b> ¬озвращает массив сстолбцов пол€
+			</li>
+			<li>
+				<b>CellMark[] GetLeftDiagonal();</b> ¬озвращает левую диагон€ль пол€
+			</li>
+			<li>
+				<b>CellMark[] GetRightDiagonal();</b> ¬озвращает правую диагон€ль пол€
+			</li>
+			<li>
+				<b>bool HasWinner();</b> ≈сть ли победитель, то есть существует ли така€ лини€(вертикаль, горизонталь, диагональ),<br>
+				в которой все значени€ либо крестики, либо нолики.
+			</li>
+		 </ol>
+		 <br>
+		 ƒл€ представлени€ значени€ клеток пол€ создайте перечисление <b>CellMark</b> со значени€ми <b>Empty, Cross, Zero</b>.<br>
+		 ¬ начале все поле заполнено <b>Empty</b>.<br><br>
+		 «аносить или получать значение из клетки пол€ с координатами x, y можно сделать только таким способом :<br>
+		 <b>var field = new GameField(3);<br>
+		 field[0, 1] = CellMark.Cross;<br>
+		 var val = field[1, 1];<br></b>
+		 Ёто можно реализовать при помощи индексатора (см справку в ссылках)
 	</p>
 				</p></div>
 				<div class="b-guest-page__help-sep"></div>
 			</div>
 			<div class="col-xs-4">
 				<div class="b-guest-page__answer">
-					<div class="b-guest-page__label">
-						”казани€ к решению:
-					</div>
-					<div class="form-group">
-						<p>
-							
-						</p>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -52,7 +74,11 @@
 			<div class="col-xs-8">
 				<div class="b-guest-help__personages">
                     <div class="b-guest-help__personages__text ng-binding" ng-bind-html="hint|nl2br">»щи подсказку по этим ссылкам:
+						
 						<br>
+						<a target="blank" href="https://msdn.microsoft.com/ru-ru/library/6x16t2tx.aspx">ѕро индексаторы(1)</a>
+						<br>
+						<a target="blank" href="http://professorweb.ru/my/csharp/charp_theory/level5/5_13.php">ѕро индексаторы(2)</a>
 						<br>
 					</div>
 				</div>
