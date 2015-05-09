@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace CSharpFeatures.Solutions
 {
-    public static class ArrayExtentions
+    public static class ArrayExtensions
     {
         public static void Swap<T>(this T[] array, int i, int j)
         {

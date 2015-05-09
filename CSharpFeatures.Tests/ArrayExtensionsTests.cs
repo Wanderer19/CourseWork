@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace CSharpFeatures.Tests
 {
     [TestFixture]
-    public class ArrayExtentionsTests
+    public class ArrayExtensionsTests
     {
         [Test]
         public void SwapTest1()
