@@ -1,0 +1,9 @@
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Tests\bin\Debug\CSharpFeatures.Tests.dll
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Tests\bin\Debug\CSharpFeatures.Tests.pdb
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Tests\bin\Debug\CSharpFeatures.Solutions.dll
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Tests\bin\Debug\nunit.framework.dll
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Tests\bin\Debug\CSharpFeatures.Solutions.pdb
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Tests\bin\Debug\nunit.framework.xml
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Tests\obj\Debug\CSharpFeatures.Tests.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Tests\obj\Debug\CSharpFeatures.Tests.dll
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Tests\obj\Debug\CSharpFeatures.Tests.pdb

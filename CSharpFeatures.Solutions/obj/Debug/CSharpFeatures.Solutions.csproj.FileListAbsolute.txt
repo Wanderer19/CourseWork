@@ -1,0 +1,4 @@
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Solutions\bin\Debug\CSharpFeatures.Solutions.dll
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Solutions\bin\Debug\CSharpFeatures.Solutions.pdb
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Solutions\obj\Debug\CSharpFeatures.Solutions.dll
+C:\Users\asus\Desktop\CourseWork\CSharpFeatures.Solutions\obj\Debug\CSharpFeatures.Solutions.pdb
