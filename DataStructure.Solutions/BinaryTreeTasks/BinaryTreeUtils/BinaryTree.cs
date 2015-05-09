@@ -148,6 +148,8 @@ namespace DataStructure.Solutions.BinaryTreeTasks.BinaryTreeUtils
 
         private void AddToTree(ref BinaryTreeItem<T> node, T value)
         {
+           // необходимо передавать узел по ссылке, так как иначе в метод передастя переменная, в которой находится ссылка (число) на узел
+            //следовательно при присвоении этой ссылке новго узла старый узел не изменится, так и останется Null, следовательно нам надо поменть именно ту ссылку.
             if (node == null)
             {
                 node = new BinaryTreeItem<T>() { Value = value };
@@ -155,6 +157,7 @@ namespace DataStructure.Solutions.BinaryTreeTasks.BinaryTreeUtils
             }
             else
             {
+                //значение в узле больше добавляемого элемента, значит он находится в левом поддереве, иначе в правом
                 if (node.Value.CompareTo(value) == 1)
                 {
                     AddToTree(ref node.LeftChild, value);

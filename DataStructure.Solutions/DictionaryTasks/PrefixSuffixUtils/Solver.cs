@@ -8,9 +8,11 @@ namespace DataStructure.Solutions.DictionaryTasks.PrefixSuffixUtils
     {
         public static Tuple<string, string, string> Solve(Word[] words)
         {
+            //словари, ключами в которых являются префиксы/суффиксы, а значения все слова, для кторых они являются префиксами/суффиксами
             var prefixes = new Dictionary<string, List<string>>();
             var suffixes = new Dictionary<string, List<string>>();
 
+            //идем по всем заданным словам и заполняем словари суффиксов и префиксов
             foreach (var word in words)
             {
                 foreach (var prefix in word.GetPrefixes())
@@ -30,6 +32,13 @@ namespace DataStructure.Solutions.DictionaryTasks.PrefixSuffixUtils
                 }
             }
 
+            /*Сортируем все префиксы по убыванию длины
+             * Идем по ним
+             * Смотрим, если существует такой же суффикс, то
+             * бежим по всем словам, которе содержат данный префикс
+             * и если для какого-то слова существует отличное от него слово в суффиксах, возвращаем эту пару
+             * так как сорировали по убыванию длин, то это и будет искомый ответ
+             * */
             foreach (var prefix in prefixes.Keys.OrderByDescending(p => p.Length))
             {
                 if (suffixes.ContainsKey(prefix))
@@ -49,6 +58,8 @@ namespace DataStructure.Solutions.DictionaryTasks.PrefixSuffixUtils
 
         public static Tuple<string, string, string> SolveSecond(Word[] words)
         {
+
+            //Linq
             var prefixes =
                 words.SelectMany(word => word.GetPrefixes().Select(p => Tuple.Create(word.Content, p)))
                     .ToLookup(t => t.Item2, t => t.Item1);

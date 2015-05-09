@@ -20,12 +20,19 @@ namespace Algorithms.Solutions
         public int BinarySearch(T[] source, T element)
         {
             //Работает, если source отсортирован в нужном порядке
+
+            /*
+             * делим массив пополам
+             * далее смотрим, в какой из половин может находится искомый элемент
+             * и ищем уже только в той половине
+             * */
             var left = 0;
             var right = source.Length - 1;
 
             while (left < right)
             {
                 var middle = (left + right) / 2;
+                // выбор нужной половины массива
                 if (source[middle].CompareTo(element) > -1) // element <= source[middle]
                 {
                     right = middle;

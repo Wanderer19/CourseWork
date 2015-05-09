@@ -13,7 +13,7 @@ namespace Algorithms.Tests
         {
             var items = new List<int>();
             var actualPermutations = PermutationsGenerator<int>.GetPermutations(items).ToList();
-            var expectedPermutations = new List<List<int>>();
+            var expectedPermutations = new List<List<int>>(){new List<int>()};
 
             Assert.That(actualPermutations, Is.EqualTo(expectedPermutations));
         }

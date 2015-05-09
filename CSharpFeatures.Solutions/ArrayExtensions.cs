@@ -5,6 +5,7 @@ namespace CSharpFeatures.Solutions
 {
     public static class ArrayExtensions
     {
+        //ключевое слово this делает обычный статический метод "как бы" динамическим методом того класса, который указан после этого слова в первом аргументе.
         public static void Swap<T>(this T[] array, int i, int j)
         {
             if (i < 0 || i >= array.Length || j < 0 || j >= array.Length)

@@ -9,9 +9,10 @@ namespace OOP.Implementation
 
         public static Dictionary<string, int> GetFrequenciesAtText(string text)
         {
-            var words =
-                text.Split(new char[] {' ', ',', '.', '!', '?'}, StringSplitOptions.RemoveEmptyEntries).ToArray();
-
+            //разбиваем слова по знакам препинания и исключаем пустые слова
+            var words = text.Split(new char[] {' ', ',', '.', '!', '?'}, StringSplitOptions.RemoveEmptyEntries).ToArray();
+           
+            //словарь, кючами которого являются слова, а значениями - частоты слов в данном тексте
             var frequencies = new Dictionary<string, int>();
             foreach (var word in words)
             {
@@ -26,7 +27,7 @@ namespace OOP.Implementation
 
         public static Dictionary<string, int> GetFrequenciesAtTextSecondVersion(string text)
         {
-
+            //Linq
             return
                 text.Split(new char[] {' ', ',', '.', '!', '?'}, StringSplitOptions.RemoveEmptyEntries)
                     .GroupBy(word => word)

@@ -19,6 +19,9 @@ namespace DataStructure.Solutions.LinkedListTasks.PetShopTask
 
         public Animal DequeueAny()
         {
+            // в качетсве параметра - лябмда выражение, в скобках указывается аргументы, после стрелки само тело, по сути по стрелки идет функция, можно обеернуть в скобки и сделать return, но так короче
+            //оператор is проверяет, каким из наследником является животное, кошкой или собакой, просто проверка типов
+            
             return Dequeue((animal) => animal.Value is Cat || animal.Value is Dog);
         }
 
@@ -34,6 +37,7 @@ namespace DataStructure.Solutions.LinkedListTasks.PetShopTask
 
         public Animal Dequeue(Func<LinkedListItem<Animal>, bool> comp)
         {
+            // ищет первого животного в очереди, который проходит проверку с помощью переданной функции
             var first = animals.First;
             while (first != null)
             {

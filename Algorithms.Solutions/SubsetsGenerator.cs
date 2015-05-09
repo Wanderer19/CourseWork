@@ -14,12 +14,16 @@ namespace Algorithms.Solutions
         {
             if (position == originalSet.Length)
             {
+                //linq выражение, которое можно заменить на цикл, в котором проверяется значение элемента в маске, и если оно true , то вернуть элемент с таким индексом
                 yield return originalSet.Where((i, j) => mask[j]).ToArray();
                 yield break;
             }
 
             mask[position] = true;
             var subsets1 = MakeSubsets(mask, originalSet, position + 1);
+
+            // так как возвращаемое значение IEnumerable, то можно не собирать коллекцию вручную, а делать ленивый return
+            // сработает при первом использовании
             foreach (var subset in subsets1)
             {
                 yield return subset;

@@ -23,10 +23,13 @@ namespace Algorithms.Solutions
         {
             if (pos == initial.Length)
             {
+                //база рекурсии, если слово сформировано , добавляем его в результирующий массив слов
                 words.Add(string.Join("", initial));
                 return;
             }
 
+
+            //перебираем все буквы алфавита и ставим в текущую позицию, и для каждого такого состояния запускаем перебор для больших позиций
             foreach (var letter in alphabet)
             {
                 initial[pos] = letter;
