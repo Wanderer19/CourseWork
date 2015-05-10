@@ -25,20 +25,56 @@
 				<p>
 							<p>
 	<h3>”словие задачи</h3>
-
+	¬ам необходимо реализовать 3 класс:<br>
+	<ol>
+		<li>
+			<b>Article</b><br>
+			¬ нем должны быть 3 публичных свойства :<br>
+			<ul>
+				<li> <b>string Text </b></li>
+				<li> <b>string Title </b></li>
+				<li> <b>string Aurthor </b></li>
+			</ul>
+		</li>
+		<li>
+			<b>Magazine</b><br>
+			¬ нем должны быть 3 публичных свойства :<br>
+			<ul>
+				<li> <b>string Name </b></li>
+				<li> <b>DateTime Release </b></li>
+				<li> <b>List&lt;Article&gt; Articles </b></li>
+			</ul>
+			<br>
+			ƒолжны быть 2 конструктора:<br>
+			<ul>
+				<li>
+					<b>Magazine(string name, DateTime release)</b>
+				</li>
+				<li>
+					<b>Magazine(string name, DateTime release, List&lt;Article&gt; articles)</b>
+				</li>
+			</ul>
+			<br>
+			1 публичный метод:<br>
+			<b>void AddArticle(Article article);</b> ƒобавл€ет статью к стать€м журнала
+		</li>
+		<li>
+			<b>Library</b><br>
+			¬ нем должно быть 4 публичных метода:<br>
+			<ul>
+				<li><b>IEnumerable&lt;Magazine&gt; GetMagazinesWithName(string name)</b> должен возвращать все журналы с данным именем </li>
+				<li> <b>IEnumerable&lt;Magazine&gt; GetMagazinesWithYear(int year)</b> должен возвращать все журналы с данным годом</li>
+				<li> <b>Magazine GetMagazine(int year, int month, string name)</b> должен возвратить журнал с заданным именем, годом и мес€цем</li>
+				<li> <b>void AddMagazine(Magazine magazine)</b> должен добавл€ть журнал в библиотеку, если журнал с таким именем, годом и мес€цем уже существует в библиотеке, то выбросить исключение типа <b>InvalidOperationException</b></li>
+			</ul>
+		</li>
+	</ol>
 	</p>
 				</p></div>
 				<div class="b-guest-page__help-sep"></div>
 			</div>
 			<div class="col-xs-4">
 				<div class="b-guest-page__answer">
-					<div class="b-guest-page__label">
-						”казани€ к решению:
-					</div>
-					<div class="form-group">
-						<p>
-						</p>
-					</div>
 				</div>
 			</div>
 		</div>
