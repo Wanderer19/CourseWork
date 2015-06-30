@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="testngrunner">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/testngrunner/lib/testngrunner.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

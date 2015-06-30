@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_untitled9" default="compile.module.untitled9">
+  <dirname property="module.untitled9.basedir" file="${ant.file.module_untitled9}"/>
+  
+  <property name="module.jdk.home.untitled9" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.untitled9" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.untitled9" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.untitled9" value="-encoding windows-1251 -source 1.6 -target 1.6 ${compiler.args}"/>
+  
+  <property name="untitled9.output.dir" value="${module.untitled9.basedir}/target/classes"/>
+  <property name="untitled9.testoutput.dir" value="${module.untitled9.basedir}/target/test-classes"/>
+  
+  <path id="untitled9.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="untitled9.module.production.classpath">
+    <path refid="${module.jdk.classpath.untitled9}"/>
+    <path refid="library.maven:_org.springframework:spring-core:4.1.1.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.3.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:4.1.1.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.1.1.release.classpath"/>
+    <path refid="library.maven:_javax.servlet:servlet-api:2.5.classpath"/>
+    <path refid="library.maven:_javax.servlet.jsp:jsp-api:2.1.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-webmvc:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:4.1.1.release.classpath"/>
+  </path>
+  
+  <path id="untitled9.runtime.production.module.classpath">
+    <pathelement location="${untitled9.output.dir}"/>
+    <path refid="library.maven:_org.springframework:spring-core:4.1.1.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.3.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:4.1.1.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.1.1.release.classpath"/>
+    <path refid="library.maven:_javax.servlet:servlet-api:2.5.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-webmvc:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:4.1.1.release.classpath"/>
+  </path>
+  
+  <path id="untitled9.module.classpath">
+    <path refid="${module.jdk.classpath.untitled9}"/>
+    <pathelement location="${untitled9.output.dir}"/>
+    <path refid="library.maven:_org.springframework:spring-core:4.1.1.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.3.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:4.1.1.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.1.1.release.classpath"/>
+    <path refid="library.maven:_javax.servlet:servlet-api:2.5.classpath"/>
+    <path refid="library.maven:_javax.servlet.jsp:jsp-api:2.1.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-webmvc:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-test:4.1.1.release.classpath"/>
+    <path refid="library.maven:_junit:junit:4.11.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+  </path>
+  
+  <path id="untitled9.runtime.module.classpath">
+    <pathelement location="${untitled9.testoutput.dir}"/>
+    <pathelement location="${untitled9.output.dir}"/>
+    <path refid="library.maven:_org.springframework:spring-core:4.1.1.release.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.1.3.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-web:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-aop:4.1.1.release.classpath"/>
+    <path refid="library.maven:_aopalliance:aopalliance:1.0.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-beans:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-context:4.1.1.release.classpath"/>
+    <path refid="library.maven:_javax.servlet:servlet-api:2.5.classpath"/>
+    <path refid="library.maven:_javax.servlet.jsp:jsp-api:2.1.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-webmvc:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-expression:4.1.1.release.classpath"/>
+    <path refid="library.maven:_org.springframework:spring-test:4.1.1.release.classpath"/>
+    <path refid="library.maven:_junit:junit:4.11.classpath"/>
+    <path refid="library.maven:_org.hamcrest:hamcrest-core:1.3.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.untitled9">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.untitled9">
+    <patternset refid="excluded.from.module.untitled9"/>
+  </patternset>
+  
+  <path id="untitled9.module.sourcepath">
+    <dirset dir="${module.untitled9.basedir}">
+      <include name="src/main/java"/>
+    </dirset>
+  </path>
+  
+  <path id="untitled9.module.test.sourcepath">
+    <dirset dir="${module.untitled9.basedir}">
+      <include name="src/test/java"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.untitled9" depends="compile.module.untitled9.production,compile.module.untitled9.tests" description="Compile module untitled9"/>
+  
+  <target name="compile.module.untitled9.production" depends="register.custom.compilers" description="Compile module untitled9; production classes">
+    <mkdir dir="${untitled9.output.dir}"/>
+    <javac2 destdir="${untitled9.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.untitled9}/javac">
+      <compilerarg line="${compiler.args.untitled9}"/>
+      <bootclasspath refid="untitled9.module.bootclasspath"/>
+      <classpath refid="untitled9.module.production.classpath"/>
+      <src refid="untitled9.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.untitled9"/>
+    </javac2>
+    
+    <copy todir="${untitled9.output.dir}">
+      <fileset dir="${module.untitled9.basedir}/src/main/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.untitled9.tests" depends="register.custom.compilers,compile.module.untitled9.production" description="compile module untitled9; test classes" unless="skip.tests">
+    <mkdir dir="${untitled9.testoutput.dir}"/>
+    <javac2 destdir="${untitled9.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.untitled9}/javac">
+      <compilerarg line="${compiler.args.untitled9}"/>
+      <bootclasspath refid="untitled9.module.bootclasspath"/>
+      <classpath refid="untitled9.module.classpath"/>
+      <src refid="untitled9.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.untitled9"/>
+    </javac2>
+    
+    <copy todir="${untitled9.testoutput.dir}">
+      <fileset dir="${module.untitled9.basedir}/src/test/java">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.untitled9" description="cleanup module">
+    <delete dir="${untitled9.output.dir}"/>
+    <delete dir="${untitled9.testoutput.dir}"/>
+  </target>
+</project>

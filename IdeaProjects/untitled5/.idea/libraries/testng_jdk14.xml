@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="testng-jdk14">
+    <CLASSES>
+      <root url="jar://C:/Program Files/Java/testngrunner/testng/testng-jdk14.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
